@@ -9,7 +9,7 @@ def GetData(a):
     for char in a:
         for i in range(16):
             for j in range(16):
-                draw_obj.point((i, j), 0)
+                draw_obj.point((i, j), 0)  # 初始化图像为黑色
         draw_obj.text((0, 0), char, fill=255, font=font)  # 在图片上覆盖白色字体
         data = [0] * 32
         fstring = [""] * 32
